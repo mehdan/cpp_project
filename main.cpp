@@ -1,9 +1,14 @@
 #include <iostream>
 #include <string>
+
+#include "Singleton.h"
+
 using namespace std;
+
 int main()
 {
-  cout << "hello world!" << endl;
-  cout << "down/upload ok" << endl;
+	Singleton& a = Singleton::GetInstance();
+  cout << "hello world!" << endl;  
+  
   return 0;
 }
